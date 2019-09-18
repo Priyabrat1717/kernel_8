@@ -55,7 +55,7 @@
 
 	i2c@78b9000 { /* BLSP1 QUP5 */
 	    lsm6ds0@6b {
-			compatible = "st,lsm6ds3";
+			compatible = "st,lsm6dx0";
 			reg = <0x6b>;
 			rot-matrix = /bits/ 16 <(0) (1) (0)
 				(-1) (0) (0)
