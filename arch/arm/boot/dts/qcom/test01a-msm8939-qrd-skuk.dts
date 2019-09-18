@@ -138,5 +138,5 @@
 	   qcom,usbin-vadc = <&pm8916_vadc>;
 };
 &android_usb{
-        adb_diaplay_name = "MOBEE01A";
+        adb_diaplay_name = "MIRAGE01A";
 };
