@@ -28,7 +28,7 @@ red='\033[0;31m'
 nocol='\033[0m'
 purple='\e[0;35m'
 white='\e[0;37m'
-DEVICE="LS-5015"
+DEVICE="LS-5002"
 J="-j$(grep -c ^processor /proc/cpuinfo)"
 mkdir -p $KERNEL_DIR
 #make $J clean mrproper
@@ -74,7 +74,7 @@ echo "             Compiling Destructive kernel        "
 echo -e "****************************************************"
 echo -e "$nocol"
 rm -f $KERN_IMG
-make O=$KERNEL_DIR mobee01a_defconfig
+make O=$KERNEL_DIR destructive_defconfig
 make O=$KERNEL_DIR $J
 if ! [ -a $KERN_IMG ];
 then
