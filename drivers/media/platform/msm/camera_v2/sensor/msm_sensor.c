@@ -508,7 +508,7 @@ int msm_sensor_match_id(struct msm_sensor_ctrl_t *s_ctrl)
 	struct msm_camera_i2c_client *sensor_i2c_client;
 	struct msm_camera_slave_info *slave_info;
 	const char *sensor_name;
-//Jelly add for s5k5e2 compatibale
+//Jelly add for ov5648_q5v22e compatibale
 #ifdef CONFIG_TEST_ONLY
 	uint16_t i=0,eepromMid = 0, eepromRmid = 0, eepromData;
 	uint32_t eepromAddr;
@@ -556,9 +556,9 @@ int msm_sensor_match_id(struct msm_sensor_ctrl_t *s_ctrl)
 		//end
 		return -ENODEV;
 	}
-//Jelly add for s5k5e2 compatibale
+//Jelly add for ov5648_q5v22e compatibale
 #ifdef CONFIG_TEST_ONLY
-	if(!strcmp(sensor_name, "s5k5e2_SFS5C7597") || !strcmp(sensor_name, "s5k5e2_F5E2YAU")){
+	if(!strcmp(sensor_name, "qtech_ov5648")){
 		eepromMid = s_ctrl->sensordata->eeprom_mid;
 
 		for(i=0; i<s_ctrl->sensordata->eeprom_mid_addr_cnt;){
