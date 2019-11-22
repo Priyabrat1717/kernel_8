@@ -165,7 +165,7 @@ static int32_t msm_sensor_fill_eeprom_subdevid_by_name(
 	struct  msm_sensor_info_t *sensor_info;
 	struct device_node *of_node = s_ctrl->of_node;
 	const void *p;
-    //Jelly add for s5k5e2 compatibale
+    //Jelly add for ov5648_q5v22e compatibale
 	#ifdef CONFIG_TEST_ONLY
 	int32_t eeprom_mid=0;
 	uint32_t cnt = 0;
@@ -199,7 +199,7 @@ static int32_t msm_sensor_fill_eeprom_subdevid_by_name(
 	count /= sizeof(uint32_t);
 	for (i = 0; i < count; i++) {
 		eeprom_name = NULL;
-        //Jelly add for s5k5e2 compatibale
+        //Jelly add for ov5648_q5v22e compatibale
 	    #ifdef CONFIG_TEST_ONLY
 		eeprom_mid=0;
 		cnt = 0;
@@ -229,7 +229,7 @@ static int32_t msm_sensor_fill_eeprom_subdevid_by_name(
 			of_node_put(src_node);
 			continue;
 		}
-         //Jelly add for s5k5e2 compatibale
+         //Jelly add for ov5648_q5v22e compatibale
 	    #ifdef CONFIG_TEST_ONLY
 		if(of_get_property(src_node, "qcom,mid-addr", &cnt)){
 			cnt /= sizeof(uint32_t);

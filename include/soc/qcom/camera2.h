@@ -147,7 +147,7 @@ struct msm_camera_sensor_board_info {
 	const char *eeprom_name;
 	const char *actuator_name;
 	const char *ois_name;
-	//Jelly add for s5k5e2 compatibale
+	//Jelly add for ov5648_q5v22e compatibale
 	#ifdef CONFIG_TEST_ONLY
     int32_t eeprom_mid_addr[30];
     uint16_t eeprom_mid_addr_cnt;
